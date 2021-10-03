@@ -1,21 +1,58 @@
-ul {
+
+html, body {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    border: 20px solid black;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
   }
-  li {
+
+nav li {
     float: left;
-  }
-  li a {
+}
+
+nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  li a:hover {
+}
+
+nav li a:hover {
     background-color: #111;
-  }
+}
+
+#full{
+    font-size: .9em;
+    color: #FF0000;
+}
   
+.club {
+    width:290px;
+    vertical-align:top;
+    /* Added for 3-column layout */
+    display: inline-block;
+}
+
+.club img{
+    float: left;
+    width: 50%;
+    margin: 20px;
+}
+
+.club:hover{
+    background-color: #CCC;
+}
+
+.club a{
+    text-decoration: none;
+    color: inherit;
+}
