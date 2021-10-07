@@ -35,11 +35,12 @@ nav li a:hover {
 }
   
 .club {
-    width:290px;
+    width:33.33%;
     vertical-align:top;
+    float: left;
     /* Added for 3-column layout */
     display: inline-block;
-}
+} 
 
 .club img{
     float: left;
@@ -54,4 +55,8 @@ nav li a:hover {
 .club a{
     text-decoration: none;
     color: inherit;
+} 
+
+aside{
+    clear:both;
 }
