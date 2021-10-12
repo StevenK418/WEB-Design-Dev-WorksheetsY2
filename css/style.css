@@ -1,8 +1,12 @@
-
 html, body {
-    width: 960px;
+    width: 60em;
     margin: 0 auto;
     padding: 0;
+    font-size: 100%;
+}
+
+h1{
+    font-size:  1.5em;
 }
 
 nav ul {
@@ -10,8 +14,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-  }
+}
 
 nav li {
     float: left;
@@ -21,7 +24,7 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.8em 1em;
     text-decoration: none;
 }
 
@@ -32,20 +35,22 @@ nav li a:hover {
 #full{
     font-size: .9em;
     color: #FF0000;
+    float: left;
+    margin: 0;
 }
   
 .club {
-    width:33.33%;
+    width:30%;
     vertical-align:top;
     float: left;
-    /* Added for 3-column layout */
-    display: inline-block;
+    text-align: left;
+    padding: .5em;
 } 
 
 .club img{
-    float: left;
-    width: 50%;
-    margin: 20px;
+    width: 100%;
+    margin: 1.4em;
+    margin-left: 0;
 }
 
 .club:hover{
@@ -55,8 +60,110 @@ nav li a:hover {
 .club a{
     text-decoration: none;
     color: inherit;
+    float: left;
 } 
+
+.club p{
+    float: left;
+}
+
+.row{
+    padding: 30px 0px 30px 0px;
+}
+
+article h1
+{
+    font-size: 1.5em;
+}
 
 aside{
     clear:both;
 }
+
+/* Nav style for large screens */
+#hamburgerNav {
+    width: 100%;
+    background-color: #333;
+}
+  
+/*HORIZONTAL MENU ITEMS*/
+#menuitems { display: flex; }
+#menuitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamburgerNav #active{
+    background-color: #232323;
+}
+  
+/* HIDE HAMBURGER */
+#hamburgerNav label, #hamburger { 
+    display: none; 
+}
+
+#hamburgerNav {
+    position: sticky;
+    top: 0;
+}
+
+/* On screens that are 768px or less, */
+@media screen and (max-width: 768px) {
+   /* set the background color to green. */
+    body {
+      background-color: green;
+    }
+
+    .club {
+        width: 100%;
+        height: auto;
+        text-align: left;
+        float: left;
+        padding: 1em;
+    }
+
+    .club img{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* BREAK INTO VERTICAL MENU */
+    #menuitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+      }
+      /* SHOW HAMBURGER ICON */
+      #hamburgerNav label { 
+        display: inline-block; 
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+      }
+    
+      /* TOGGLE SHOW/HIDE MENU */
+      #menuitems { display: none; }
+      #hamburgerNav input:checked ~ #menuitems { display: block; }
+  }
+  /* set the background color to red */
+  @media screen and (max-width: 576px) {
+    body {
+      background-color: red;
+    }
+
+    
+
+  }
+    /* set the background color to blue */
+  @media screen and (max-width: 320px) {
+    body {
+      background-color: blue;
+    }
+  }

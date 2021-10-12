@@ -17,13 +17,18 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Clubs.html" id="active">Clubs</a></li>
-                    <li><a href="Register.html">Register Club</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
+            <!-- Hamburger Menu -->
+            <nav id="hamburgerNav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
+                <div id="menuitems">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Clubs.html" id="active">Clubs</a></li>
+                        <li><a href="Register.html">Register Club</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
@@ -36,32 +41,34 @@
                     From sports, arts, technology, engineering and many, many more, whatever your interest, whatever your background, we're sure we have the perfect group for you. 
                 </p>
             </article>
-            <article class="club">
-                <img src="images/cricket-724617_960_720.jpg" alt="People playing cricket">
-                <h1>Cricket</h1>
-                <p>
-                    IT Sligo's cricket club was started in 1994 from humble beginnings. Over the next 3 years, the club would garner... 
-                </p>
-                <a href="cricket.html" class="read-more">Read More...</a>
-                <p id="full">Club at full membership</p>
-            </article>
-            <article class="club">
-                <img src="images/basketball-1544370_960_720.jpg" alt="People playing cricket">
-                <h1>Basketball</h1>
-                <p>
-                    IT Sligo's basketball club was started in 1997 and has grown from strength to strength since. The club comprises both Male and Female members with each group competing in their own team respectively. 
-                    Both male and female teams have won several awards since it's conception, including...
-                    <a href="basketball.html" class="read-more">Read More...</a>
-                </p>
-            </article>
-            <article class="club">
-                <img src="images/fencing-1839325_960_720.jpg" alt="People playing cricket">
-                <h1>Fencing</h1>
-                <p>
-                    Sporting one of Ireland's very few fencing clubs, ITS fencing club has a rich and exciting history. The club is one of the oldest, formed in 1985, 
-                </p>
-                <a href="fencing.html" class="read-more">Read More...</a>
-            </article>
+            <div class="row"></div>
+                <article class="club">
+                        <img src="images/cricket.jpg" alt="People playing cricket">
+                        <h1>Cricket</h1>
+                        <p>
+                            IT Sligo's cricket club was started in 1994 from humble beginnings. Over the next 3 years, the club would garner... 
+                        </p>
+                        <a href="cricket.html" class="read-more">Read More...</a>
+                        <p id="full">Club at full membership</p>
+                </article>
+                <article class="club">
+                        <img src="images/basketball.jpg" alt="People playing basketball">
+                        <h1>Basketball</h1>
+                        <p>
+                            IT Sligo's basketball club was started in 1997 and has grown from strength to strength since. The club comprises both Male and Female members with each group competing in their own team respectively. 
+                            Both male and female teams have won several awards since it's conception, including...
+                            <a href="basketball.html" class="read-more">Read More...</a>
+                        </p>
+                </article>
+                <article class="club">
+                        <img src="images/fencing.jpg" alt="People fencing">
+                        <h1>Fencing</h1>
+                        <p>
+                            Sporting one of Ireland's very few fencing clubs, ITS fencing club has a rich and exciting history. The club is one of the oldest, formed in 1985, 
+                        </p>
+                        <a href="fencing.html" class="read-more">Read More...</a>
+                </article>
+            </div>
             <aside>
                 <h2>
                    New?
