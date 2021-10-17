@@ -10,6 +10,8 @@
         <title>Fencing | Clubs & Societies - ITS</title>
         <meta name="description" content="IT Sligo Clubs and Societies contact page, allowing you to view all of IT Sligo's Societies and clubs which form an integral part of student life at IT Sligo.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -18,19 +20,30 @@
         <![endif]-->
         <header>
             <!-- Hamburger Menu -->
-            <nav id="hamburgerNav">
-                <label for="hamburger">&#9776;</label>
-                <input type="checkbox" id="hamburger"/>
-                <div id="menuitems">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Clubs.html">Clubs</a></li>
-                        <li><a href="Register.html">Register Club</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="Clubs.html">Clubs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="Register.html">Register Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
         <main>
             <h1>Welcome to ITS Fencing Club</h1>
             <img src="images/TRexSociety.jpg" alt="A scene from a convention" class="main-image">
@@ -59,5 +72,8 @@
         <footer>
             &copy; 2019 ITS Clubs & Societies
         </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
     </body>
 </html>
