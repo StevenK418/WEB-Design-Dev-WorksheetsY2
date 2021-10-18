@@ -1,0 +1,17 @@
+.club:hover{
+    background-color: #ACACAC !important;
+}
+
+.club a{
+    text-decoration: none;
+    color: #232323;
+}
+
+.main-image{
+    margin: 2.0em;
+    margin-left: 0;
+}
+
+#clubVacancyStatus{
+    color: #FF0000;
+}
